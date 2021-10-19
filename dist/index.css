@@ -1,0 +1,430 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+/* Общие для всего приложения стили */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(c4a6213c7badb1e0daa8.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+    background-position: center;
+    position: fixed;
+    background-repeat: repeat;
+}
+html::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding: 100px 0;
+    font-size: 12px;
+}
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    z-index: 0;
+}
+.modal-visibal {
+    opacity: 1;
+    z-index: 5;
+}
+
+.modal-container__todo {
+    margin: auto;
+    margin-top: 10%;
+    background-color: #bbbaba;
+    padding: 40px;
+    width: 500px;
+    border-radius: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 5px rgba(17, 13, 13, 1), inset 0 0 20px 0 rgba(17, 13, 13, 0.8);
+    background-color: rgba(159, 159, 157, 0.7);
+}
+.modal-container__prograss {
+    margin: auto;
+    margin-top: 10%;
+    background-color: #bbbaba;
+    padding: 40px;
+    width: 500px;
+    border-radius: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 5px rgba(17, 13, 13, 1), inset 0 0 20px 0 rgba(17, 13, 13, 0.8);
+    background-color: rgba(159, 159, 157, 0.7);
+}
+.modal-container__done {
+    margin: auto;
+    margin-top: 10%;
+    background-color: #bbbaba;
+    padding: 40px;
+    width: 500px;
+    border-radius: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 5px rgba(17, 13, 13, 1), inset 0 0 20px 0 rgba(17, 13, 13, 0.8);
+    background-color: rgba(159, 159, 157, 0.7);
+}
+
+
+
+.modal-title{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-title label{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.modal-title input{
+    width: 100%;
+    outline: none;
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #d1d0d0;
+    margin-bottom: 16px;
+    box-shadow: 0 0 10px 5px rgba(17, 13, 13, 0.3);
+}
+.modal-discription{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-description_textarealabel{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.modal-description_textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #d1d0d0;
+    margin-bottom: 16px;
+    box-shadow: 0 0 10px 5px rgba(17, 13, 13, 0.3);
+}
+.modal-date {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.modal-date label {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.bytton-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.bytton-modal button {
+    padding: 10px;
+}
+#submitModal-add{
+    border-radius: 5px;
+    border: 0;
+    border: 2px solid transparent;
+    background-color: rgba(67, 247, 82, 0.7);
+    box-shadow: 0 0 20px 0 rgba(17, 13, 13, 1);
+    transition: 0.3s;
+}
+#submitModal-add:hover{
+    cursor: pointer;
+    border: 2px solid rgba(9, 95, 16, 0.7);
+}
+#submitModal-add:active{
+    box-shadow: inset 0 0 20px 0 rgba(17, 13, 13, 0.8);
+    transform: scale(0.9);
+}
+
+#cancelModal-add{
+    border-radius: 5px;
+    border: 0;
+    border: 2px solid transparent;
+    background-color: rgba(129, 129, 129, 0.7);
+    box-shadow: 0 0 20px 0 rgba(17, 13, 13, 1);
+    transition: 0.3s;
+}
+
+#submitModal-remove {
+    border-radius: 5px;
+    border: 0;
+    border: 2px solid transparent;
+    background-color: rgba(253, 0, 0, 0.7);
+    box-shadow: 0 0 20px 0 rgba(17, 13, 13, 1);
+    transition: 0.3s;
+}
+
+#submitModal-remove:hover {
+    cursor: pointer;
+    border: 2px solid rgba(95, 9, 9, 0.7);
+}
+#submitModal-remove:active {
+    box-shadow: inset 0 0 20px 0 rgba(17, 13, 13, 0.8);
+    transform: scale(0.9);
+}
+
+
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/board/board.css ***!
+  \***********************************************************************/
+/* Стили доски */
+.board-wrap {
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.board-item {
+    text-align: left;
+    margin: 40px 15px;
+    width: 298px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 5px rgba(17, 13, 13, 1), inset 0 0 20px 0 rgba(17, 13, 13, 0.8);
+}
+.board-item:first-child {
+    border-radius: 4px;
+    background-color: rgba(159, 159, 157, 0.7);
+}
+.board-item:nth-child(2) {
+    border-radius: 4px;
+    background-color: rgba(159, 159, 157, 0.7);
+}
+.board-item:last-child {
+    border-radius: 4px;
+    background-color: rgba(159, 159, 157, 0.7);
+}
+.board-list__button {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: 0.3s;
+}
+.list-button__visibol {
+    opacity: 1;
+}
+
+
+.todo-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    background-color: rgba(247, 67, 67, 0.0);
+    color: black;
+    border: 0;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.todo-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(17, 13, 13, 0.3);
+}
+.todo-button:active {
+    box-shadow: inset 0 0 5px 5px rgba(122, 14, 14, 0.3);
+    transform: scale(0.95);
+}
+
+
+.board-progress__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.progress-counter {
+    line-height: 18px;
+}
+
+.progress-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    background-color: rgba(247, 67, 67, 0.0);
+    color: black;
+    border: 0;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+.progress-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(17, 13, 13, 0.3);
+}
+.progress-button:active {
+    box-shadow: inset 0 0 5px 5px rgba(0, 7, 94, 0.3);
+    transform: scale(0.95);
+}
+
+
+
+.done-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    background-color: rgba(247, 67, 67, 0.0);
+    color: black;
+    border: 0;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+.done-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(17, 13, 13, 0.3);
+}
+.done-button:active {
+    box-shadow: inset 0 0 5px 5px rgba(80, 82, 1, 0.3);
+    transform: scale(0.95);
+}
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/card/card.css ***!
+  \*********************************************************************/
+/* Стили карточки на доске */
+.list-date {
+    font-weight: 400;
+    font-size: 11px;
+    color: #666666;
+}
+.board-list {
+    font-weight: 500;
+}
+.board-title {
+    margin-bottom: 16px;
+}
+.board-item__list {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #d1d0d0;
+    margin-bottom: 16px;
+    box-shadow: 0 0 10px 5px rgba(17, 13, 13, 0.3);
+    transition: 0.2s;
+}
+
+.board-item__list:hover {
+    background-color: #bbbaba;
+}
+.board-list__button i {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(85, 82, 82, 0.644);
+}
+.board-list__button i:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.315);
+}
+.board-list__button i:active {
+    box-shadow: inset 0 0 5px 5px rgba(87, 86, 86, 0.8);
+    transform: scale(0.9);
+}
+.board-list__title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.board-item__list p {
+    margin-bottom: 8px;
+    line-height: 18px;
+}
+
+.modal-icon {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+}
+.modal-icon option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.board-list__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 8px;
+
+}
+.board-list__icon p {
+    font-weight: 400;
+    font-size: 11px;
+    color: #666666;
+}
+
+.list-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+

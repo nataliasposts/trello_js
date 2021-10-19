@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Kanban</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="board-wrap">
+
+        <!--card todo-->
+
+        <div class="board-item" id="speaker-todo">
+          <h3 class="board-title">
+            To Do
+          </h3>
+          <ul class="board-list" id="board-list__todo"></ul>
+          <button type="button" class="todo-button" id="button-todo">
+            + Добавить карточку
+          </button>
+        </div>
+
+        <!--end todo-->
+
+        <!--card prograss-->
+
+        <div class="board-item">
+          <div class="board-progress__title">
+            <h3 class="progress__title">
+              In Progress
+            </h3>
+            <p class="progress-counter">
+              <span id="counter">0</span>
+              <span>/</span>
+              <span>5</span>
+            </p>
+          </div>
+          <ul class="board-list" id="speaker-prograss"></ul>
+          <button type="button" class="progress-button" id="button-in-progress">
+            + Добавить карточку
+          </button>
+        </div>
+
+        <!--end progress-->
+
+        <!--card done-->
+
+        <div class="board-item">
+          <h3 class="board-title">
+            Done
+          </h3>
+          <ul class="board-list" id="speaker-done"></ul>
+          <button type="button" class="done-button" id="done-button__item">
+            + Добавить карточку
+          </button>
+        </div>
+
+        <!--end done-->
+
+      </div>
+    </div>
+
+    <!--modal window-->
+
+    <div class="modal-window" id="modal">
+      <div class="modal-container" id="modal-container">
+        <div class="modal-title">
+          <label for="text-title__modal">Заголовок:</label>
+          <input type="text" id="text-title__modal" />
+        </div>
+        <div class="modal-description">
+          <label for="text-description__modal" class="modal-description_textarealabel">Описание:</label>
+          <textarea type="text" name="modal-describe" id="text-description__modal" class="modal-description_textarea"></textarea>
+        </div>
+        <div class="bytton-modal">
+          <button type="button" id="submitModal-add">Добавить карточку</button>
+          <button type="button" id="cancelModal-add">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+  
+
+   
+    
+
+  </section>
+</body>
+
+</html>
